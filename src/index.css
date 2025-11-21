@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* small helpers for the annoying UI */
+.tilt { transform: rotate(-0.6deg); }
+.pixelate { image-rendering: pixelated; -webkit-font-smoothing: none; }
+.small-time { font-size: .65rem; opacity: .6; }
+
+/* pointer-capture area for the evasion container so cursor tracking is smoother */
+.evasion-area { position: relative; }
+.evasive-btn { position: absolute; transition: transform 120ms ease-out; }
